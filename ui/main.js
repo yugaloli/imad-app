@@ -14,6 +14,7 @@ button.onclick= function (){
             
         }
     };
-    request.open('GET','http://yugaloli123.imad.hasura-app.io/counter')
+    request.open('GET','http://yugaloli123.imad.hasura-app.io/counter');
+    request.send(null);
    
 };

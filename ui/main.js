@@ -1,4 +1,4 @@
-//counter
+/*//counter
 
 var button = document.getElementById('x');
 button.onclick= function (){
@@ -17,4 +17,8 @@ button.onclick= function (){
     request.open('GET','http://yugaloli123.imad.hasura-app.io/counter');
     request.send(null);
    
-};
+};*/
+// submit name
+var nameInput =document.getElementById('name');
+var name = nameInput.value;
+var submit=document.getElementById('submit');

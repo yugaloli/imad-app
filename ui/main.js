@@ -1,9 +1,19 @@
 //counter
 
 var button = document.getElementById('x');
-var counter=0;
 button.onclick= function (){
-    counter=counter+1;
-    var span=document.getElementById('a');
-    span.innerHTML=counter.toString();
+    var request=new XMLHttpRequest();
+    request.onreadystatechange =function(){
+        if(request.readyState===XMLHttpRequest.DONE){
+            if(request.status===200)
+            {
+                var counter=req.responseText;
+                var span=document.getElementById('a');
+                span.innerHTML=counter.toString();
+            }   
+            
+        }
+    };
+    request.open('GET','http://yugaloli123.imad.hasura-app.io/counter')
+   
 };

@@ -1,0 +1,19 @@
+<html>
+<body>
+<script>
+var a=prompt("Enter a No");
+n=a;
+s=0;
+while(n>0)
+{
+r=parseInt(n%10);
+s=s*10+r;
+n=parseInt(n/10);
+}
+if(s==a)
+document.write("<h1>No "+a+" is Palindrome </h1>"+s);
+else
+document.write("<h1>No "+a+" is Not Palindrome</h1>"+s);
+</SCRIPT>
+</body>
+</html>
